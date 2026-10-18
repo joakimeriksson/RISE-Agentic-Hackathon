@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "seed": 42,
+  "prng": "Mulberry32",
+  "license": "CC0 proposed; owner approval pending",
+  "records": {
+    "sensor": 864,
+    "dirty": 865,
+    "robotTargets": 12,
+    "factoryScenarios": 3,
+    "sourceCards": 6,
+    "soundSamples": 5
+  },
+  "files": {
+    "sensor-readings.csv": {
+      "bytes": 40671,
+      "sha256": "5c23db6b81f817e002bec21174a4e8d071a000305b625686e82af5e667098d14"
+    },
+    "sensor-dirty.csv": {
+      "bytes": 40712,
+      "sha256": "6dbc6e3570d6e5c5e87aa1221f6a55b6411b2077fe84c9890e6f76d5932ba036"
+    },
+    "sensor-empty.csv": {
+      "bytes": 63,
+      "sha256": "295e2f71b65b7c143659e9182f904fe391ac7b8d23033cff8b2a1608afaeb4e7"
+    },
+    "sensor-malformed.csv": {
+      "bytes": 25,
+      "sha256": "3798d6f5c4b576b8e1fe56d68f5e284d62d03ecab1fb8273f9cdbfad68ee60f4"
+    },
+    "robot-presets.json": {
+      "bytes": 644,
+      "sha256": "450f734fb2150e1f6191d9f81648c88d83479853364cf14ea897d121c832a072"
+    },
+    "factory-scenarios.json": {
+      "bytes": 507,
+      "sha256": "607b283ec72b740297be0344387a9cfa125ea00d481142dad36aef628294fdce"
+    },
+    "experiment-config.json": {
+      "bytes": 197,
+      "sha256": "f57ba9cfd2643584d9c5badb64fe96bb8137811abe56245ee6d38eb89815e7ac"
+    },
+    "source-cards.json": {
+      "bytes": 1367,
+      "sha256": "172e1029bd185258ab1590758640c85d810fa673a29b3c428efee84807c426ee"
+    },
+    "tone-440.wav": {
+      "bytes": 64044,
+      "sha256": "da4f7da2991656682d39d8dc389ef551209e6f07b1ae6c6bd3eee0a2f6728328"
+    },
+    "tone-1000.wav": {
+      "bytes": 64044,
+      "sha256": "b9789074d5e5f430d4dbb1f7cc6f4b12d05e20c16f0f923f9195d66321b77678"
+    },
+    "mix.wav": {
+      "bytes": 64044,
+      "sha256": "16c475a8368de18fe35e122d712e9c3ceee39608b588b213ac612ef9f9e3f2a6"
+    },
+    "noise.wav": {
+      "bytes": 64044,
+      "sha256": "9e2ad1bb4bf0d6341337819244089045c33473ac1a7f7c82cc6ee3f3287c354d"
+    },
+    "silence.wav": {
+      "bytes": 64044,
+      "sha256": "20eaebffe1816e0ffa6f7f854f5ef4ea80d5349faaf0ce1fec1b713e7fde58fa"
+    },
+    "sound-metadata.json": {
+      "bytes": 902,
+      "sha256": "3afd87175d808c4f9345377806a8b0c5e360326543878768b5ed9e66d3211d50"
+    }
+  }
+}

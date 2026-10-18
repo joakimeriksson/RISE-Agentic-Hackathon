@@ -1,0 +1,21 @@
+{
+  "title": "Robot Lab",
+  "mission": "Build a two-link arm simulator that responds to joint-angle controls.",
+  "data": [
+    "robot-presets.json"
+  ],
+  "steps": [
+    "Read the link lengths, starting angles and limits from the fixture.",
+    "Add two labeled joint-angle controls and a reset button.",
+    "Draw the arm and show endpoint coordinates in meters.",
+    "Add numeric target entry and explain whether a target is reachable."
+  ],
+  "checks": [
+    "Zero angles place the endpoint at (L1 + L2, 0).",
+    "A 90-degree first joint and zero second joint place it at (0, L1 + L2).",
+    "Keyboard controls respect joint limits; drawing and displayed coordinates agree."
+  ],
+  "validation": "Distinguish geometric reach from reach under joint limits.",
+  "extension": "Add inverse kinematics or a recorded movement sequence.",
+  "hint": "Work out the zero-angle case on paper. Convert degrees to radians; the second link uses the sum of the joint angles."
+}

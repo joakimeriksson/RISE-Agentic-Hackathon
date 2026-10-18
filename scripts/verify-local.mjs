@@ -1,0 +1,4 @@
+import { spawnSync } from 'node:child_process';import { mkdirSync,writeFileSync } from 'node:fs';
+mkdirSync('artifacts',{recursive:true});let log=`Local verification · ${new Date().toISOString()} · ${process.version} · ${process.platform}/${process.arch}\n`;let failed=false;
+for(const command of ['lint','test','data:validate','check:docs','build','build:offline','test:offline-dom']){const args=command==='test'?['test']:['run',command];const result=spawnSync('npm',args,{encoding:'utf8',env:process.env});const output=`\n$ npm ${args.join(' ')}\n${result.stdout||''}${result.stderr||''}Exit: ${result.status}\n`;log+=output;process.stdout.write(output);if(result.status!==0)failed=true;}
+log+='\nReal browser tests are separately blocked by sandbox/server/browser policies; this command does not claim they passed.\n';writeFileSync('artifacts/verification.txt',log);if(failed)process.exitCode=1;

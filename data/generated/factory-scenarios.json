@@ -1,0 +1,38 @@
+[
+  {
+    "synthetic": true,
+    "name": "Bottleneck",
+    "arrival": 4,
+    "processing": [
+      3,
+      9,
+      3
+    ],
+    "capacity": 3,
+    "duration": 240
+  },
+  {
+    "synthetic": true,
+    "name": "Balanced",
+    "arrival": 4,
+    "processing": [
+      3,
+      3,
+      3
+    ],
+    "capacity": 3,
+    "duration": 240
+  },
+  {
+    "synthetic": true,
+    "name": "Small buffer",
+    "arrival": 2,
+    "processing": [
+      2,
+      5,
+      2
+    ],
+    "capacity": 1,
+    "duration": 120
+  }
+]

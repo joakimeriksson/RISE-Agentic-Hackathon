@@ -1,0 +1,54 @@
+[
+  {
+    "name": "tone-440",
+    "synthetic": true,
+    "sampleRate": 16000,
+    "sampleCount": 32000,
+    "amplitude": 0.12,
+    "seed": 42,
+    "expectedPeaks": [
+      440
+    ]
+  },
+  {
+    "name": "tone-1000",
+    "synthetic": true,
+    "sampleRate": 16000,
+    "sampleCount": 32000,
+    "amplitude": 0.12,
+    "seed": 42,
+    "expectedPeaks": [
+      1000
+    ]
+  },
+  {
+    "name": "mix",
+    "synthetic": true,
+    "sampleRate": 16000,
+    "sampleCount": 32000,
+    "amplitude": 0.12,
+    "seed": 42,
+    "expectedPeaks": [
+      440,
+      880
+    ]
+  },
+  {
+    "name": "noise",
+    "synthetic": true,
+    "sampleRate": 16000,
+    "sampleCount": 32000,
+    "amplitude": 0.12,
+    "seed": 42,
+    "expectedPeaks": []
+  },
+  {
+    "name": "silence",
+    "synthetic": true,
+    "sampleRate": 16000,
+    "sampleCount": 32000,
+    "amplitude": 0.12,
+    "seed": 42,
+    "expectedPeaks": []
+  }
+]

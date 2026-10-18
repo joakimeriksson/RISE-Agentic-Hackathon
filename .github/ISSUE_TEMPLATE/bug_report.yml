@@ -1,0 +1,10 @@
+name: Bug report
+description: Report a reproducible problem using synthetic inputs only
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Expected result, observed result, and steps
+      description: Include browser and challenge. Do not include credentials or personal data.
+    validations:
+      required: true

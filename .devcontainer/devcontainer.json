@@ -1,0 +1,24 @@
+{
+  "name": "Agentic workshop \u00b7 Node 24.22.0",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "postCreateCommand": "npm ci",
+  "forwardPorts": [
+    5173
+  ],
+  "portsAttributes": {
+    "5173": {
+      "label": "Run demo",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "remote.autoForwardPorts": false
+      }
+    }
+  }
+}

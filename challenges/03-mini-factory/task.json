@@ -1,0 +1,21 @@
+{
+  "title": "Mini Factory",
+  "mission": "Simulate a three-station production line and investigate its bottleneck.",
+  "data": [
+    "factory-scenarios.json"
+  ],
+  "steps": [
+    "Read a scenario and show station states and waiting queues.",
+    "Implement a bounded simulation engine separately from the display.",
+    "Add start, pause, reset and single-step controls; show simulated time and completions.",
+    "Change one processing time and compare two runs of the same duration."
+  ],
+  "checks": [
+    "Identical inputs produce identical results.",
+    "Pause stops simulated progress; reset restores the initial state.",
+    "Queues stay within capacity and every arrival is waiting, processing, completed or explicitly rejected."
+  ],
+  "validation": "Compare throughput, maximum queue size and utilization using the same scenario duration.",
+  "extension": "Experiment with buffer capacity or a seeded breakdown schedule.",
+  "hint": "Start with one item and one simulated second per click. Specify how simultaneous events and blocked stations behave."
+}

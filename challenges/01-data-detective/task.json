@@ -1,0 +1,22 @@
+{
+  "title": "Data Detective",
+  "mission": "Turn synthetic sensor readings into a dashboard and investigate a suspicious interval.",
+  "data": [
+    "sensor-readings.csv",
+    "sensor-dirty.csv"
+  ],
+  "steps": [
+    "Load the CSV and show readings in a labeled table.",
+    "Add a machine selector and UTC date filters.",
+    "Draw temperature over time and calculate count, mean, min and max.",
+    "Investigate a suspicious interval and write three sentences supported by the selected readings."
+  ],
+  "checks": [
+    "Changing a filter updates the table, chart and summary together.",
+    "Missing and malformed readings are reported rather than converted to zero.",
+    "An empty selection gives a useful message."
+  ],
+  "validation": "Add explicit missing-value and duplicate handling, then explain your anomaly threshold.",
+  "extension": "Compare machines or export filtered CSV safely.",
+  "hint": "Begin with five rows in a table before building the chart. Decide which values count as valid."
+}

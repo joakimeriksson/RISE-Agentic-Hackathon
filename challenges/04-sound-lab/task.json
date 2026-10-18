@@ -1,0 +1,26 @@
+{
+  "title": "Sound Lab",
+  "mission": "Build a visual analyzer for bundled synthetic audio samples.",
+  "data": [
+    "sound-metadata.json",
+    "tone-440.wav",
+    "tone-1000.wav",
+    "mix.wav",
+    "noise.wav",
+    "silence.wav"
+  ],
+  "steps": [
+    "Add a sample chooser and explicit Start and Stop controls.",
+    "Read a bundled WAV sample and display its waveform.",
+    "Calculate and display a spectrum and peak frequency.",
+    "Provide numerical results and compare a tone, a mixture and silence."
+  ],
+  "checks": [
+    "Known tones are identified within one frequency bin (sample rate / window size).",
+    "Silence produces finite values and a sensible no-peak message.",
+    "No playback or microphone access starts automatically; visual results are sufficient."
+  ],
+  "validation": "Let users choose the analysis window and explain frequency resolution.",
+  "extension": "Add smoothing or a frequency-band indicator. Microphone mode is optional and must release all tracks on Stop.",
+  "hint": "Start by inspecting the WAV metadata and drawing a short waveform. Choose an analysis method before asking the agent to implement it."
+}
