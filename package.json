@@ -17,6 +17,7 @@
     "data:generate": "node scripts/generate-data.mjs",
     "data:validate": "node scripts/validate-data.mjs",
     "build:offline": "node scripts/build-offline.mjs",
+    "agents:install": "bash scripts/install-agents.sh",
     "test:offline-dom": "node --test tests/offline/*.test.js"
   },
   "devDependencies": {

@@ -18,6 +18,10 @@ No working launch button is asserted. Intended address for owner verification: `
 
 If setup takes over five unresolved minutes, use [fallbacks](docs/FALLBACKS.md). No account or editor is needed to view previously distributed standalone offline demos; saving code changes still needs an approved editor or pairing.
 
+## Optional: terminal coding agents
+
+The cloud terminal is a full Linux VM, so CLI coding agents work there. Editor Copilot remains the default; this is an opt-in extra. In the cloud terminal run `npm run agents:install` to install [Gemini CLI](https://github.com/google-gemini/gemini-cli) (free Google sign-in) and [OpenCode](https://opencode.ai) (bring your own provider). Then start the agent from the repository root and paste the challenge prompt from PROMPTS.md. Verify results with the challenge CHECKLIST.md. Do not enable paid keys to get unstuck; pairing remains the free floor.
+
 ## Commands (cloud terminal or already equipped machine)
 
 | Command | Purpose |
