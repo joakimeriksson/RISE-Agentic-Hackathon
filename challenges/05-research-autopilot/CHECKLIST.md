@@ -1,5 +1,6 @@
 # Research Autopilot: acceptance checklist
 
+- [ ] `npm run check research` passes the checks for my timebox (30 or 45 minutes).
 - [ ] Zero and negative thickness values are rejected.
 - [ ] Doubling thickness halves noiseless heat flow.
 - [ ] Three trials at each of five settings produce 15 reproducible trials; every quoted passage exists in the cited card.
@@ -9,4 +10,4 @@
 - [ ] A partner can repeat my check, and I can explain one assumption.
 - [ ] I reviewed the diff, saved my work and cleaned up cloud compute.
 
-These are criteria for the application you build. Kit smoke tests passing only means the task scaffold opens correctly.
+`npm run check research` tests the calculations in logic.js; check the rest by hand in the page. `npm test` only checks the kit itself.

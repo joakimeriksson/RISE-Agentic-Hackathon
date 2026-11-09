@@ -1,5 +1,6 @@
 # Robot Lab: acceptance checklist
 
+- [ ] `npm run check robot` passes the checks for my timebox (30 or 45 minutes).
 - [ ] Zero angles place the endpoint at (L1 + L2, 0).
 - [ ] A 90-degree first joint and zero second joint place it at (0, L1 + L2).
 - [ ] Keyboard controls respect joint limits; drawing and displayed coordinates agree.
@@ -9,4 +10,4 @@
 - [ ] A partner can repeat my check, and I can explain one assumption.
 - [ ] I reviewed the diff, saved my work and cleaned up cloud compute.
 
-These are criteria for the application you build. Kit smoke tests passing only means the task scaffold opens correctly.
+`npm run check robot` tests the calculations in logic.js; check the rest by hand in the page. `npm test` only checks the kit itself.

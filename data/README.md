@@ -12,5 +12,8 @@ Every fixture is generated locally by `npm run data:generate`, using **Mulberry3
 | sound-metadata.json and five WAVs | Mono PCM, 16000 Hz, 32000 samples, two seconds, amplitude ≤0.12, seed 42; tone-440, tone-1000, equal-amplitude 440/880 mix, seeded uniform noise and silence. Metadata stores expected peaks; no peak is guaranteed for noise. |
 | experiment-config.json | k W/(m K), area m², deltaT K, thicknesses m, integer seeds, relative noise 0.02. Q in W; positive thickness required. |
 | source-cards.json | Six original fictional cards: id, title, content, role, synthetic:true. Supporting, conflicting, irrelevant and harmless injection-fixture text. No real authors or scientific authority. |
+| handbook.json | Eight fictional internal guides (id, title, updated ISO date, text, optional supersededBy) plus the shared stopword list. One guide is replaced by a newer one; two guides disagree and the newer wins. |
+| applications.json / certifications.json | Six fictional certification applications in form, table and letter layouts, with planted problems. certifications.json gives minimum experience per certification and the DD/MM/YYYY rule for slash dates. |
+| calls.json / application-draft.json | Five fictional funding calls (deadline, maxGrant SEK, maxMonths, topics, funding rates, overhead cap, partner rules) and one draft budget with three partners that breaks several rules on purpose. |
 
 Implementation choices are part of the tasks: document factory event ordering and bounds, sound analysis settings and research noise/spread definitions. Keep source-card text untrusted.

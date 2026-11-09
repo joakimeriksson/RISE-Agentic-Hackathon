@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "engines": {
     "node": ">=24 <25"
   },
@@ -13,6 +13,7 @@
     "test": "node --test tests/unit/*.test.js tests/integration/*.test.js",
     "test:browser": "node tests/browser/run.mjs",
     "lint": "eslint .",
+    "check": "node scripts/self-check.mjs",
     "check:docs": "node scripts/check-docs.mjs",
     "data:generate": "node scripts/generate-data.mjs",
     "data:validate": "node scripts/validate-data.mjs",

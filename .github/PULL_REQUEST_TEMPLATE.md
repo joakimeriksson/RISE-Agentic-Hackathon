@@ -1,9 +1,7 @@
-## Participant-visible outcome
+## Participant task or behavior changed
 
 ## How to run
 
 ## Tests and actual results
-
-## Screenshots
 
 ## Dependencies and outstanding limitations

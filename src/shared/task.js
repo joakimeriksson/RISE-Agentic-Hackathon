@@ -8,6 +8,7 @@ export function mountTask(task) {
     parent.append(node);
     return node;
   };
+  add(root, 'p', 'Level: ' + task.level).className = 'eyebrow';
   add(root, 'p', task.mission).className = 'notice';
   const brief = add(root, 'section', '');
   add(brief, 'h2', 'Your tasks');
@@ -26,6 +27,9 @@ export function mountTask(task) {
     input.type = 'checkbox';
     label.append(input, document.createTextNode(check));
   }
+  const self = add(brief, 'p', 'Self-check: put your calculations in logic.js, then run ');
+  add(self, 'code', 'npm run check ' + task.check);
+  self.append(' in the terminal. It lists which 30- and 45-minute checks pass.');
   const hints = add(brief, 'details', '');
   add(hints, 'summary', 'Need a starting hint?');
   add(hints, 'p', task.hint);

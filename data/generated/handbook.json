@@ -1,0 +1,95 @@
+{
+  "synthetic": true,
+  "organisation": "The Institute (fictional)",
+  "stopwords": [
+    "a",
+    "an",
+    "and",
+    "are",
+    "at",
+    "be",
+    "by",
+    "can",
+    "do",
+    "does",
+    "for",
+    "from",
+    "how",
+    "i",
+    "in",
+    "is",
+    "it",
+    "me",
+    "my",
+    "of",
+    "on",
+    "or",
+    "should",
+    "the",
+    "to",
+    "what",
+    "when",
+    "where",
+    "who",
+    "with"
+  ],
+  "guides": [
+    {
+      "id": "H1",
+      "title": "Requesting access in Ledger",
+      "updated": "2025-03-01",
+      "text": "Ask your line manager to approve the request in the Service Portal under Access > Ledger. Project managers get the Project Manager role. Approval takes up to two working days.",
+      "synthetic": true
+    },
+    {
+      "id": "H2",
+      "title": "Requesting access in Ledger",
+      "updated": "2023-01-10",
+      "supersededBy": "H1",
+      "text": "Email the finance office to request Ledger access. Approval takes up to ten working days.",
+      "synthetic": true
+    },
+    {
+      "id": "H3",
+      "title": "Signing an NDA",
+      "updated": "2025-05-12",
+      "text": "Use the standard mutual NDA template from the Legal page. If the customer changes any clause, send the draft to legal@institute.example before signing. Unit managers may sign standard NDAs.",
+      "synthetic": true
+    },
+    {
+      "id": "H4",
+      "title": "Travel booking",
+      "updated": "2024-11-20",
+      "text": "Book trips through the travel agency portal. Trips abroad need approval from your line manager before booking. Train is the default for trips under 500 km.",
+      "synthetic": true
+    },
+    {
+      "id": "H5",
+      "title": "Reporting a security incident",
+      "updated": "2025-08-01",
+      "text": "Report lost laptops, phishing or suspicious logins to the security desk at once, day or night. Do not investigate on your own.",
+      "synthetic": true
+    },
+    {
+      "id": "H6",
+      "title": "New customer in Atlas",
+      "updated": "2025-02-14",
+      "text": "Register new customers in Atlas before sending a quote. Check the company registration number and add a contact person. Quotes above 500 000 SEK need a second reviewer.",
+      "synthetic": true
+    },
+    {
+      "id": "H7",
+      "title": "Working from another country",
+      "updated": "2024-06-03",
+      "text": "Working from another country for more than 20 days per year needs HR approval because of tax and insurance rules.",
+      "synthetic": true
+    },
+    {
+      "id": "H8",
+      "title": "Climate travel policy",
+      "updated": "2025-10-01",
+      "text": "Since 1 October 2025, train is the default for trips under 800 km. Flights need a short written reason.",
+      "synthetic": true
+    }
+  ]
+}

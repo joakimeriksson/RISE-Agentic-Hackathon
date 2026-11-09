@@ -1,0 +1,24 @@
+{
+  "title": "Budget Guard",
+  "level": "Starter",
+  "check": "budget",
+  "mission": "Check a fictional project budget against funding-call rules and find the calls it can actually apply to.",
+  "data": [
+    "application-draft.json",
+    "calls.json"
+  ],
+  "steps": [
+    "Show the draft budget as a table: cost, requested grant and co-funding per partner.",
+    "Check the draft against one call: duration, partners, overhead share, funding rate and total grant.",
+    "Let the user edit a number and see the problems update.",
+    "List the calls that are open, fit the rules and share at least one topic, best match first."
+  ],
+  "checks": [
+    "Totals and co-funding add up and match a hand calculation.",
+    "Each broken rule names the partner it concerns; exactly 30 % overhead is allowed.",
+    "The untouched draft is eligible for no call; a fixed budget is eligible for C4 and C1."
+  ],
+  "validation": "Show why each rejected call was rejected, in plain words.",
+  "extension": "Let an LLM explain the problems to the applicant or propose work packages, and check its suggestion with your own rules.",
+  "hint": "Calculate one partner's cost by hand first. Money rules break at exact limits, so compare carefully."
+}

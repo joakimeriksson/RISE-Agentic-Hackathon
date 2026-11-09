@@ -9,7 +9,10 @@
     "robotTargets": 12,
     "factoryScenarios": 3,
     "sourceCards": 6,
-    "soundSamples": 5
+    "soundSamples": 5,
+    "handbookGuides": 8,
+    "applications": 6,
+    "calls": 5
   },
   "files": {
     "sensor-readings.csv": {
@@ -43,6 +46,26 @@
     "source-cards.json": {
       "bytes": 1367,
       "sha256": "172e1029bd185258ab1590758640c85d810fa673a29b3c428efee84807c426ee"
+    },
+    "handbook.json": {
+      "bytes": 2743,
+      "sha256": "b0a70cff20cffdae25e4b5a4adc808e4d0153895221cd9da8becf97eaae3bcc0"
+    },
+    "applications.json": {
+      "bytes": 2052,
+      "sha256": "685b065634689ec0ef4a504cb9a915a33d6afeee89c438fdbd6d5bada51bc353"
+    },
+    "certifications.json": {
+      "bytes": 236,
+      "sha256": "f208a797f12556d97afab26334019a38f430ced05cfd5223eadf4dd030b5144d"
+    },
+    "calls.json": {
+      "bytes": 1940,
+      "sha256": "e534b85cc49c1c57494d0c1b0261f2c97c1eb8f84a281ea7738c9ad95c1ebf68"
+    },
+    "application-draft.json": {
+      "bytes": 727,
+      "sha256": "f5da33a3b1ba88c6879323516f7c6f5b3b990dbb014510f26b7bbdc1613b1ed1"
     },
     "tone-440.wav": {
       "bytes": 64044,

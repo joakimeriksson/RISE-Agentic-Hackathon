@@ -3,3 +3,5 @@ dist/
 artifacts/
 .npm/
 .DS_Store
+deploy/rise-codespaces/.env
+deploy/rise-codespaces/certs/

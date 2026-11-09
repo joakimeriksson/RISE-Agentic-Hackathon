@@ -2,7 +2,9 @@
 
 Turn synthetic sensor readings into a dashboard and investigate a suspicious interval.
 
-This is a task, not a nearly finished application. You get a brief, synthetic inputs, shared styling and an empty workspace. You build the controls, logic and results with an agent or a partner.
+**Level:** Intermediate · **Self-check:** `npm run check data`
+
+There is no hidden solution. You get a brief, synthetic inputs, a self-check and an empty workspace; you build the rest with an agent or a partner.
 
 ## Open the task
 
@@ -24,7 +26,7 @@ This is a task, not a nearly finished application. You get a brief, synthetic in
 - **45 minutes:** finish the core steps and validate them. Add explicit missing-value and duplicate handling, then explain your anomaly threshold.
 - **60 minutes:** Compare machines or export filtered CSV safely. Have a partner inspect the change and your evidence.
 
-These are unpiloted targets. Setup comes before the task clock.
+Setup time is not counted.
 
 ## Check your result
 
@@ -32,13 +34,13 @@ These are unpiloted targets. Setup comes before the task clock.
 - [ ] Missing and malformed readings are reported rather than converted to zero.
 - [ ] An empty selection gives a useful message.
 
-Also test one invalid or boundary input and explain one limitation. Add tests for the behavior you implement. `npm test` checks the kit and fixtures; it does not certify your unfinished application. See [CHECKLIST.md](CHECKLIST.md).
+Run `npm run check data` to test the calculations in `logic.js`; it reports each 30- and 45-minute check as pass or fail. Ask your agent to keep going until the checks for your timebox pass, and to fix `logic.js` rather than the test. Check the page itself (controls, drawing, keyboard use) by hand with [CHECKLIST.md](CHECKLIST.md), and explain one limitation.
 
 ## Hints and working without an agent
 
 Begin with five rows in a table before building the chart. Decide which values count as valid.
 
-Sketch the controls and output first. In `app.js`, add one labeled input or a small table to `workspace`, save, refresh and inspect the result. Next implement one calculation or state transition. Check a tiny example by hand before connecting the rest of the UI. Keep a backup before each step and ask a partner to review it. No completed implementation is included.
+Sketch the controls and output first. Write one calculation in `logic.js`, check a tiny example by hand, then run `npm run check data`. In `app.js`, add a labeled input or a small table to `workspace` that uses it, save, refresh and inspect the result. Keep a backup before each step and ask a partner to review it.
 
 ## Inputs and deliverable
 

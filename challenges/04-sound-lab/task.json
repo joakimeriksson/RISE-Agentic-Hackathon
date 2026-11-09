@@ -1,5 +1,7 @@
 {
   "title": "Sound Lab",
+  "level": "Intermediate",
+  "check": "sound",
   "mission": "Build a visual analyzer for bundled synthetic audio samples.",
   "data": [
     "sound-metadata.json",

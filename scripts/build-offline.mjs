@@ -27,7 +27,7 @@ function copy(dir) {
 for (const dir of ['challenges', 'data', 'src']) copy(dir);
 for (const name of ['README.md', 'GETTING_STARTED.md', 'THIRD_PARTY_NOTICES.md',
   'docs/FALLBACKS.md', 'docs/AGENT_WORKFLOW.md', 'docs/DATA_POLICY.md',
-  'docs/COST_AND_ACCESS.md', 'docs/ACCESSIBILITY.md', 'docs/RELEASE_CHECKLIST.md', 'docs/VERIFICATION.md']) {
+  'docs/COST_AND_ACCESS.md', 'docs/ACCESSIBILITY.md', 'docs/LLM_ACCESS.md', 'docs/RELEASE_CHECKLIST.md', 'docs/VERIFICATION.md']) {
   files[name] = new Uint8Array(readFileSync(name));
 }
 // Regenerate this disposable output directory so old demos cannot survive a rebuild.
@@ -37,6 +37,8 @@ for (const [name, bytes] of Object.entries(files)) {
   mkdirSync(resolve('artifacts/offline', name, '..'), { recursive: true });
   writeFileSync('artifacts/offline/' + name, bytes);
 }
-writeFileSync('artifacts/offline-kit.zip', zipSync(Object.fromEntries(Object.entries(files)
-  .map(([name, bytes]) => [name, [bytes, { mtime: new Date('2026-01-15T00:00:00Z') }]])), { level: 6 }));
-console.log('Built five task workspaces, briefs and synthetic inputs; no completed applications.');
+const archive = zipSync(Object.fromEntries(Object.entries(files)
+  .map(([name, bytes]) => [name, [bytes, { mtime: new Date('2026-01-15T00:00:00Z') }]])), { level: 6 });
+writeFileSync('artifacts/offline-kit.zip', archive);
+writeFileSync('offline-kit.zip', archive);
+console.log('Built eight task workspaces, briefs and synthetic inputs; no completed applications.');

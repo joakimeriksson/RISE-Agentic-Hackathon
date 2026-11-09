@@ -1,5 +1,7 @@
 {
   "title": "Robot Lab",
+  "level": "Starter",
+  "check": "robot",
   "mission": "Build a two-link arm simulator that responds to joint-angle controls.",
   "data": [
     "robot-presets.json"

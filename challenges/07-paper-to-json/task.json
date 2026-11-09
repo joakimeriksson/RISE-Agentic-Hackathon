@@ -1,0 +1,24 @@
+{
+  "title": "Paper to JSON",
+  "level": "Starter",
+  "check": "forms",
+  "mission": "Turn fictional certification applications in mixed layouts into validated JSON records.",
+  "data": [
+    "applications.json",
+    "certifications.json"
+  ],
+  "steps": [
+    "Show each application's raw text next to an empty record with the eight fields.",
+    "Normalize dates written as 2026-05-03, 3 May 2026 or 03/05/2026 to ISO format.",
+    "Extract the fields from the form and table layouts.",
+    "Validate each record and list its problems: missing fields, unknown certification, too little experience, exam before submission."
+  ],
+  "checks": [
+    "03/05/2026 is read as 3 May, following the DD/MM rule in certifications.json.",
+    "Missing fields become null and are reported, never guessed.",
+    "Every application ends up valid or with a readable list of problems."
+  ],
+  "validation": "Show a table of all six applications with their status and problems.",
+  "extension": "Let an LLM extract the two letter-style applications, then run its JSON through the same validator.",
+  "hint": "Do dates first: they are small, easy to test and full of traps. Invalid dates such as 31/02/2026 must give null."
+}

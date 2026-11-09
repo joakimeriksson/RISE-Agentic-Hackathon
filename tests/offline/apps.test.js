@@ -3,15 +3,25 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { JSDOM, VirtualConsole } from 'jsdom';
 import { unzipSync } from 'fflate';
+import { pathToFileURL } from 'node:url';
 const zip = unzipSync(readFileSync('artifacts/offline-kit.zip'));
 const pages = Object.entries(zip).filter(([n]) => /^challenges\/[^/]+\/index.html$/.test(n));
 test('participant ZIP excludes completed code, answers and historical backups', () => {
-  assert.equal(pages.length, 5);
+  assert.equal(pages.length, 8);
   for (const name of Object.keys(zip)) {
     assert.ok(!/solutions\/|ANSWER_KEY|experiment-results|^artifacts\/|^instructors\/|^demo-/.test(name), name);
   }
   assert.deepEqual(Object.keys(zip).filter(n => /^src\/shared\/.*\.js$/.test(n)).sort(),
     ['src/shared/random.js', 'src/shared/task.js']);
+});
+test('participant ZIP ships only TODO stubs in logic.js', async () => {
+  const stubs = Object.keys(zip).filter(n => /^challenges\/[^/]+\/logic\.js$/.test(n));
+  assert.equal(stubs.length, 8);
+  for (const name of stubs) {
+    const exports = Object.entries(await import(pathToFileURL('artifacts/offline/' + name).href));
+    assert.ok(exports.length > 0, name);
+    for (const [fn, value] of exports) assert.throws(() => value(), /^Error: TODO/, `${name} ${fn}`);
+  }
 });
 for (const [name, bytes] of pages) {
   test(`task scaffold: ${name}`, () => {

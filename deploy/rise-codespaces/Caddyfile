@@ -1,0 +1,22 @@
+# Caddy in front of Coder. Two certificate options — keep ONE of the blocks.
+#
+# Option A (recommended): RISE IT issues you a wildcard certificate for
+#   hack.rise.se + *.hack.rise.se and you drop fullchain.pem / privkey.pem
+#   into ./certs. No ACME, no DNS plugin, works on managed laptops.
+#
+# Option B: Let's Encrypt. The apex works out of the box, but the wildcard
+#   needs a DNS-01 challenge, i.e. a Caddy build with your DNS provider's
+#   plugin (https://caddyserver.com/docs/modules/dns.providers). Without the
+#   wildcard, set CODER_WILDCARD_ACCESS_URL empty and use path-based apps
+#   (code-server still works; the Vite preview needs a `base` tweak).
+
+# ---- Option A -------------------------------------------------------------
+{$CODER_DOMAIN}, *.{$CODER_DOMAIN} {
+	tls /certs/fullchain.pem /certs/privkey.pem
+	reverse_proxy coder:7080
+}
+
+# ---- Option B (apex only, automatic Let's Encrypt) ------------------------
+# {$CODER_DOMAIN} {
+# 	reverse_proxy coder:7080
+# }

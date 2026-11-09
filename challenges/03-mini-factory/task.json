@@ -1,5 +1,7 @@
 {
   "title": "Mini Factory",
+  "level": "Advanced",
+  "check": "factory",
   "mission": "Simulate a three-station production line and investigate its bottleneck.",
   "data": [
     "factory-scenarios.json"
@@ -17,5 +19,5 @@
   ],
   "validation": "Compare throughput, maximum queue size and utilization using the same scenario duration.",
   "extension": "Experiment with buffer capacity or a seeded breakdown schedule.",
-  "hint": "Start with one item and one simulated second per click. Specify how simultaneous events and blocked stations behave."
+  "hint": "Start with one item and one simulated second per click. The simulation rules in README.md say what happens when events coincide or a station is blocked."
 }

@@ -12,6 +12,6 @@ Before inviting people, complete PREFLIGHT and release gates. State that simulat
 
 90-minute alternative: 0–15 setup; 15–25 demonstration; 25–55 core work; 55–70 validation/extension; 70–80 peer review; 80–90 demos and cleanup.
 
-Ask: What changed? What input supports your conclusion? Which check would catch a mistake? What is one model limitation? A table-only or no-agent result is valid. Use the task acceptance checklists for review. Ask guiding questions and keep participants responsible for implementing each feature.
+Ask: What feature did you build? Which input supports your conclusion? Which check could catch a mistake? What is one model limitation? A smaller table-only feature is a valid starting slice. Use the task acceptance checklists for review. Ask guiding questions and keep participants responsible for implementing each feature.
 
 Assign a second facilitator/device, a private contact for conduct/security issues, an accessibility contact and the account payer. Distribute the tested offline ZIP in advance. Record actual beginner timings; reduce scope if the 30/45-minute targets are missed.

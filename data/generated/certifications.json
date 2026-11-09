@@ -1,0 +1,10 @@
+{
+  "synthetic": true,
+  "dateFormat": "Slash dates are DD/MM/YYYY.",
+  "minimumExperienceYears": {
+    "Welding inspector level 1": 2,
+    "Welding inspector level 2": 5,
+    "Energy auditor": 3,
+    "Fire safety coordinator": 1
+  }
+}

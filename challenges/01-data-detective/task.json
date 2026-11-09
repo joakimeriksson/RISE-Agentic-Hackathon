@@ -1,5 +1,7 @@
 {
   "title": "Data Detective",
+  "level": "Intermediate",
+  "check": "data",
   "mission": "Turn synthetic sensor readings into a dashboard and investigate a suspicious interval.",
   "data": [
     "sensor-readings.csv",

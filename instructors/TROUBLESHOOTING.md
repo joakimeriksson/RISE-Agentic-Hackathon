@@ -14,7 +14,7 @@ After five minutes of unresolved setup trouble, use the fallback ladder.
 | Malformed CSV | Exact headers, numeric/missing conventions, 1 MiB cap | Reset to bundled data; inspect error |
 | Audio blocked | Use the synthetic WAV inputs without adding playback | Start sample; no microphone required |
 | Permission denied | Browser microphone permission/secure origin | Use synthetic sample mode |
-| Frozen simulation | Starter TODO, paused state, end of run | Complete TODO, Step or Reset; inspect bounds |
+| Frozen simulation | Participant implementation, paused state, end of run | Inspect the participant code, Step or Reset; check bounds |
 | Lost changes | Saved files, Source Control, personal remote | Recover from local history/download/commit; don't discard blindly |
 
 Export results before refresh/reset. Closing the preview does not stop Codespaces compute. Stop/delete from the account's Codespaces list after saving work.

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "APP-1001",
+    "layout": "form",
+    "text": "CERTIFICATION APPLICATION\nApplicant ID: APP-1001\nName: Alva Lindqvist\nCertification: Welding inspector level 1\nEmployer: Nordweld AB\nSubmitted: 2026-03-02\nExam date: 2026-04-15\nExperience (years): 3\nEmail: alva.lindqvist@nordweld.example",
+    "synthetic": true
+  },
+  {
+    "id": "APP-1002",
+    "layout": "table",
+    "text": "| Field | Value |\n| --- | --- |\n| Applicant ID | APP-1002 |\n| Name | Omar Haddad |\n| Certification | Welding inspector level 2 |\n| Employer | Kustbygg AB |\n| Submitted | 10/03/2026 |\n| Exam date | 22 April 2026 |\n| Experience (years) | 4 |\n| Email | omar.haddad@kustbygg.example |",
+    "synthetic": true
+  },
+  {
+    "id": "APP-1003",
+    "layout": "form",
+    "text": "Application for personal certification\nRef: APP-1003\nFull name: Mira Svensson\nCertificate applied for: Energy auditor\nCompany: Ljusgarden Fastigheter\nDate submitted: 5 March 2026\nExam on: 01/03/2026\nYears of experience: 6\nE-mail: mira.svensson@ljusgarden.example",
+    "synthetic": true
+  },
+  {
+    "id": "APP-1004",
+    "layout": "letter",
+    "text": "Hello, my name is Jonas Berg (applicant APP-1004) and I work at Brandkoll AB. I would like to apply for the Fire safety coordinator certification. I have 2 years of experience and would like to take the exam on 12 May 2026. I am sending this on 20 April 2026. You can reach me by phone.",
+    "synthetic": true
+  },
+  {
+    "id": "APP-1005",
+    "layout": "letter",
+    "text": "APP-1005. Dear certification team, I, Sara Nilsson of Elektro Vast AB, am applying to become a certified Drone pilot. Submitted 2026-04-01; preferred exam date 2026-05-20. Experience: 8 years. Contact: sara.nilsson@elektrovast.example",
+    "synthetic": true
+  },
+  {
+    "id": "APP-1006",
+    "layout": "form",
+    "text": "Applicant ID: APP-1006\nName: Li Wei\nCertification: Energy auditor\nEmployer: Varmeteknik AB\nSubmitted: 2026-04-08\nExperience (years): 1\nEmail: li.wei@varmeteknik.example",
+    "synthetic": true
+  }
+]

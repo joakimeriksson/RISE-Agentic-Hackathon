@@ -1,6 +1,6 @@
 # Pilot results
 
-Status: **all five challenges unpiloted with beginners**. No Codespaces cold start, managed-device/event-network test or manual screen-reader test has been observed. Automated results are recorded separately in release evidence.
+Status: **all eight task scopes unpiloted with beginners**. An owner Codespaces launch succeeded, but no cold-start timing, managed-device/event-network test or manual screen-reader test has been recorded. Automated results are recorded separately in release evidence.
 
 | Date / challenge | Device, OS, browser, network | Experience | Setup / first result / core time | Machine and payer | Barrier / fallback | Fix / retest owner |
 | --- | --- | --- | --- | --- | --- | --- |

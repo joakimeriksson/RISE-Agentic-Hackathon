@@ -2,7 +2,9 @@
 
 Build a two-link arm simulator that responds to joint-angle controls.
 
-This is a task, not a nearly finished application. You get a brief, synthetic inputs, shared styling and an empty workspace. You build the controls, logic and results with an agent or a partner.
+**Level:** Starter · **Self-check:** `npm run check robot`
+
+There is no hidden solution. You get a brief, synthetic inputs, a self-check and an empty workspace; you build the rest with an agent or a partner.
 
 ## Open the task
 
@@ -24,7 +26,7 @@ This is a task, not a nearly finished application. You get a brief, synthetic in
 - **45 minutes:** finish the core steps and validate them. Distinguish geometric reach from reach under joint limits.
 - **60 minutes:** Add inverse kinematics or a recorded movement sequence. Have a partner inspect the change and your evidence.
 
-These are unpiloted targets. Setup comes before the task clock.
+Setup time is not counted.
 
 ## Check your result
 
@@ -32,13 +34,13 @@ These are unpiloted targets. Setup comes before the task clock.
 - [ ] A 90-degree first joint and zero second joint place it at (0, L1 + L2).
 - [ ] Keyboard controls respect joint limits; drawing and displayed coordinates agree.
 
-Also test one invalid or boundary input and explain one limitation. Add tests for the behavior you implement. `npm test` checks the kit and fixtures; it does not certify your unfinished application. See [CHECKLIST.md](CHECKLIST.md).
+Run `npm run check robot` to test the calculations in `logic.js`; it reports each 30- and 45-minute check as pass or fail. Ask your agent to keep going until the checks for your timebox pass, and to fix `logic.js` rather than the test. Check the page itself (controls, drawing, keyboard use) by hand with [CHECKLIST.md](CHECKLIST.md), and explain one limitation.
 
 ## Hints and working without an agent
 
 Work out the zero-angle case on paper. Convert degrees to radians; the second link uses the sum of the joint angles.
 
-Sketch the controls and output first. In `app.js`, add one labeled input or a small table to `workspace`, save, refresh and inspect the result. Next implement one calculation or state transition. Check a tiny example by hand before connecting the rest of the UI. Keep a backup before each step and ask a partner to review it. No completed implementation is included.
+Sketch the controls and output first. Write one calculation in `logic.js`, check a tiny example by hand, then run `npm run check robot`. In `app.js`, add a labeled input or a small table to `workspace` that uses it, save, refresh and inspect the result. Keep a backup before each step and ask a partner to review it.
 
 ## Inputs and deliverable
 

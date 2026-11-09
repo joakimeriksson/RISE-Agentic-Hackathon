@@ -1,0 +1,103 @@
+[
+  {
+    "id": "C1",
+    "title": "Green Industry 2026",
+    "deadline": "2026-11-30",
+    "maxGrant": 2000000,
+    "maxMonths": 24,
+    "topics": [
+      "circular",
+      "materials",
+      "industry",
+      "energy"
+    ],
+    "fundingRate": {
+      "research": 1,
+      "company": 0.5
+    },
+    "maxOverheadShare": 0.3,
+    "minPartners": 2,
+    "needsCompany": true,
+    "synthetic": true
+  },
+  {
+    "id": "C2",
+    "title": "Digital Health Pilots",
+    "deadline": "2026-12-15",
+    "maxGrant": 3000000,
+    "maxMonths": 36,
+    "topics": [
+      "health",
+      "ai",
+      "data"
+    ],
+    "fundingRate": {
+      "research": 1,
+      "company": 0.5
+    },
+    "maxOverheadShare": 0.3,
+    "minPartners": 2,
+    "needsCompany": true,
+    "synthetic": true
+  },
+  {
+    "id": "C3",
+    "title": "Battery Materials Open Call",
+    "deadline": "2026-09-30",
+    "maxGrant": 3000000,
+    "maxMonths": 36,
+    "topics": [
+      "battery",
+      "materials",
+      "energy"
+    ],
+    "fundingRate": {
+      "research": 1,
+      "company": 0.5
+    },
+    "maxOverheadShare": 0.3,
+    "minPartners": 2,
+    "needsCompany": true,
+    "synthetic": true
+  },
+  {
+    "id": "C4",
+    "title": "Circular Construction",
+    "deadline": "2027-02-01",
+    "maxGrant": 4000000,
+    "maxMonths": 36,
+    "topics": [
+      "circular",
+      "construction",
+      "materials"
+    ],
+    "fundingRate": {
+      "research": 1,
+      "company": 0.5
+    },
+    "maxOverheadShare": 0.3,
+    "minPartners": 2,
+    "needsCompany": true,
+    "synthetic": true
+  },
+  {
+    "id": "C5",
+    "title": "Small Feasibility Studies",
+    "deadline": "2026-12-01",
+    "maxGrant": 500000,
+    "maxMonths": 12,
+    "topics": [
+      "energy",
+      "industry",
+      "construction"
+    ],
+    "fundingRate": {
+      "research": 1,
+      "company": 0.5
+    },
+    "maxOverheadShare": 0.3,
+    "minPartners": 2,
+    "needsCompany": true,
+    "synthetic": true
+  }
+]

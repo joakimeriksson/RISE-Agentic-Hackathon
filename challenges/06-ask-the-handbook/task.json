@@ -1,0 +1,23 @@
+{
+  "title": "Ask the Handbook",
+  "level": "Intermediate",
+  "check": "handbook",
+  "mission": "Answer staff questions from fictional internal guides, quoting the source, and say \"I don't know\" when the guides do not cover it.",
+  "data": [
+    "handbook.json"
+  ],
+  "steps": [
+    "Load the guides and show them as a searchable list with title and date.",
+    "Search: rank guides by how many of the question's words they contain.",
+    "Answer with one quoted sentence and its guide, skipping guides that were replaced.",
+    "Refuse when the evidence is too weak, and prefer the newest guide when two disagree."
+  ],
+  "checks": [
+    "Every answer quotes a sentence that really exists in the cited guide.",
+    "Questions the guides do not cover get an honest \"no answer\", not a guess.",
+    "An outdated or replaced guide is never cited when a newer one answers the question."
+  ],
+  "validation": "Explain your evidence threshold and show a question that sits just below it.",
+  "extension": "Let an LLM rephrase the quoted answer, then reject replies containing numbers the guide does not contain.",
+  "hint": "Start with search for a single word such as \"phishing\". Use the stopword list in handbook.json so everyone counts words the same way."
+}

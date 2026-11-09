@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
-test('five task routes without completed applications', () => {
+test('eight task routes without completed applications', () => {
   const html = readFileSync('index.html', 'utf8');
-  assert.equal((html.match(/Open task/g) || []).length, 5);
+  assert.equal((html.match(/Open task/g) || []).length, 8);
   assert.ok(!html.includes('solutions/'));
   assert.ok(!existsSync('solutions'));
   assert.ok(!existsSync('instructors/ANSWER_KEY.md'));
@@ -14,5 +14,8 @@ test('five task routes without completed applications', () => {
     assert.equal(task.checks.length, 3);
     assert.ok(task.data.every(f => existsSync('data/generated/' + f)));
     assert.match(readFileSync(`challenges/${slug}/app.js`, 'utf8'), /TODO: Build your/);
+    assert.ok(['Starter', 'Intermediate', 'Advanced'].includes(task.level), slug);
+    assert.match(task.check, /^[a-z]+$/);
+    assert.ok(existsSync(`challenges/${slug}/logic.js`) && existsSync(`challenges/${slug}/self-check.test.js`), slug);
   }
 });

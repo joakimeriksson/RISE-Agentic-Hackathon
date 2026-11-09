@@ -1,0 +1,38 @@
+{
+  "title": "Recycled Concrete Pilot",
+  "currency": "SEK",
+  "months": 30,
+  "keywords": [
+    "circular",
+    "materials",
+    "construction",
+    "recycling"
+  ],
+  "partners": [
+    {
+      "name": "Institute Building Lab",
+      "type": "research",
+      "personnel": 900000,
+      "overhead": 315000,
+      "other": 50000,
+      "requested": 1265000
+    },
+    {
+      "name": "Kustbygg AB",
+      "type": "company",
+      "personnel": 1000000,
+      "overhead": 200000,
+      "other": 100000,
+      "requested": 780000
+    },
+    {
+      "name": "Gruskross AB",
+      "type": "company",
+      "personnel": 200000,
+      "overhead": 40000,
+      "other": 10000,
+      "requested": 55000
+    }
+  ],
+  "synthetic": true
+}

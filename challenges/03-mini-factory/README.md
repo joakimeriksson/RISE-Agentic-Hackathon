@@ -2,7 +2,9 @@
 
 Simulate a three-station production line and investigate its bottleneck.
 
-This is a task, not a nearly finished application. You get a brief, synthetic inputs, shared styling and an empty workspace. You build the controls, logic and results with an agent or a partner.
+**Level:** Advanced · **Self-check:** `npm run check factory`
+
+There is no hidden solution. You get a brief, synthetic inputs, a self-check and an empty workspace; you build the rest with an agent or a partner.
 
 ## Open the task
 
@@ -18,13 +20,26 @@ This is a task, not a nearly finished application. You get a brief, synthetic in
 3. Add start, pause, reset and single-step controls; show simulated time and completions.
 4. Change one processing time and compare two runs of the same duration.
 
+## Simulation rules
+
+The self-check expects these rules, so the simulation behaves the same for everyone:
+
+- Time moves in whole seconds; one `step` is one second. `capacity` is the number of items that can **wait** in each queue, not counting the item at the station.
+- Within each second, at time `t`:
+  1. **Finish**, last station first: a station whose item started at time `s` is done when `t ≥ s + processing`. Station 3 sends its item to *completed*. Stations 1–2 move it into the next queue; if that queue is full the item stays and the station is **blocked**.
+  2. **Arrive**: if `t` is a multiple of `arrival` (0, 4, 8, … for 4 s), a new item joins queue 1, or is **rejected** if queue 1 is full.
+  3. **Start**: every empty station takes the next item from its own queue.
+- So the first item arrives at `t = 0` and starts at station 1 straight away. Every item is always waiting, at a station (busy or blocked), completed or rejected.
+
+Hand check: on the Balanced line an item spends 3 s at each station, so the item that arrives at `t` completes at `t + 9`. In 240 s (t = 0…239), items arriving at 0, 4, …, 228 complete: 58 items.
+
 ## Choose your timebox
 
 - **30 minutes:** aim for a single-step state table for three stations. Spend 0–5 exploring, 5–10 planning with the agent, 10–25 implementing, and 25–30 checking and demonstrating. Start with a small working slice; finish the core steps as time allows.
 - **45 minutes:** finish the core steps and validate them. Compare throughput, maximum queue size and utilization using the same scenario duration.
 - **60 minutes:** Experiment with buffer capacity or a seeded breakdown schedule. Have a partner inspect the change and your evidence.
 
-These are unpiloted targets. Setup comes before the task clock.
+Setup time is not counted.
 
 ## Check your result
 
@@ -32,13 +47,13 @@ These are unpiloted targets. Setup comes before the task clock.
 - [ ] Pause stops simulated progress; reset restores the initial state.
 - [ ] Queues stay within capacity and every arrival is waiting, processing, completed or explicitly rejected.
 
-Also test one invalid or boundary input and explain one limitation. Add tests for the behavior you implement. `npm test` checks the kit and fixtures; it does not certify your unfinished application. See [CHECKLIST.md](CHECKLIST.md).
+Run `npm run check factory` to test the calculations in `logic.js`; it reports each 30- and 45-minute check as pass or fail. Ask your agent to keep going until the checks for your timebox pass, and to fix `logic.js` rather than the test. Check the page itself (controls, drawing, keyboard use) by hand with [CHECKLIST.md](CHECKLIST.md), and explain one limitation.
 
 ## Hints and working without an agent
 
 Start with one item and one simulated second per click. Specify how simultaneous events and blocked stations behave.
 
-Sketch the controls and output first. In `app.js`, add one labeled input or a small table to `workspace`, save, refresh and inspect the result. Next implement one calculation or state transition. Check a tiny example by hand before connecting the rest of the UI. Keep a backup before each step and ask a partner to review it. No completed implementation is included.
+Sketch the controls and output first. Write one calculation in `logic.js`, check a tiny example by hand, then run `npm run check factory`. In `app.js`, add a labeled input or a small table to `workspace` that uses it, save, refresh and inspect the result. Keep a backup before each step and ask a partner to review it.
 
 ## Inputs and deliverable
 
