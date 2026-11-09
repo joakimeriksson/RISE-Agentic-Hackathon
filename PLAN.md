@@ -6,4 +6,4 @@ Keep eight missions: five core application tasks and three agent-practice tasks.
 
 Shared code supplies task presentation, styling, fixture generation and an optional development-only LLM proxy for the 60-minute stretches. Do not include completed models, answer keys, reference routes or solution imports in the active project or distribution. Keep the core 30/45-minute routes independent of paid APIs and external services.
 
-The old implementation is preserved in excluded historical local archives. Browser, accessibility, managed-device, self-hosted deployment and beginner timing gates remain unverified; the public repository, template and an owner Codespaces launch are verified.
+The old implementation is preserved in excluded historical local archives. Manual accessibility, managed-device, self-hosted deployment and beginner timing gates remain unverified; the public repository, template and an owner Codespaces launch are verified.

@@ -59,6 +59,6 @@ Use Copilot in the editor, install terminal agents with `npm run agents:install`
 - [Instructor guide](instructors/FACILITATOR.md), [preflight](instructors/PREFLIGHT.md) and [pilot log](instructors/PILOT_RESULTS.md).
 - An **unverified self-hosted workspace route** using Coder is included under `deploy/rise-codespaces/`; run its smoke and load tests before relying on it.
 
-Cloud compute needs an eligible account and a known payer; agent access is separate. No paid model API is required by the core missions. Browser, accessibility, managed-device, deployment and beginner-timing checks remain open — complete the [release checklist](docs/RELEASE_CHECKLIST.md) before an event.
+Cloud compute needs an eligible account and a known payer; agent access is separate. No paid model API is required by the core missions. Manual accessibility, managed-device, deployment and beginner-timing checks remain open — complete the [release checklist](docs/RELEASE_CHECKLIST.md) before an event.
 
 Code: MIT (see `LICENSE`) · Synthetic data: CC0 · All organizations and records are fictional · No RISE endorsement is implied.
